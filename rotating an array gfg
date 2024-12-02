@@ -1,0 +1,6 @@
+class Solution:
+    def leftRotate(self, arr, d):
+        n = d%len(arr)
+        arr[:] = arr[n:]+arr[:n]
+
+
